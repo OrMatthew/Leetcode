@@ -15,7 +15,7 @@ public:
             pushed.erase(p);
             
             auto q = popped.begin();
-            while (!tmp.empty() and *q == *(tmp.rbegin()))
+            while (!tmp.empty() && *q == *(tmp.rbegin()))
             {
                 popped.erase(q);
                 tmp.pop_back();
